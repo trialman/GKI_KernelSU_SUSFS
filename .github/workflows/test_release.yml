@@ -139,13 +139,8 @@ jobs:
       contents: write
       actions: write
     needs:
-        - get_manager
-        - build-kernel-a12-5-10
-        - build-kernel-a13-5-10
-        - build-kernel-a13-5-15
-        - build-kernel-a14-5-15
-        - build-kernel-a14-6-1
-        - build-kernel-a15-6-6
+        - get_manager 
+        - build-kernel-a14-6-1 
     if: ${{ inputs.make_release }}
     env:
       REPO_OWNER: ShirkNeko
